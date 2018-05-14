@@ -257,6 +257,19 @@ nikto -h http://INSERTIPADDRESS
 # Nikto with squid proxy
 nikto -h INSERTIPADDRESS -useproxy http://INSERTIPADDRESS:4444
 
+# CMS Explorer
+cms-explorer -url http://INSERTIPADDRESS -type [Drupal, WordPress, Joomla, Mambo]
+
+# WPScan (vp = Vulnerable Plugins, vt = Vulnerable Themes, u = Users)
+wpscan --url http://INSERTIPADDRESS
+wpscan --url http://INSERTIPADDRESS --enumerate vp
+wpscan --url http://INSERTIPADDRESS --enumerate vt
+wpscan --url http://INSERTIPADDRESS --enumerate u
+
+# Joomscan
+joomscan -u  http://INSERTIPADDRESS 
+joomscan -u  http://INSERTIPADDRESS --enumerate-components
+
 # Get header
 curl -i INSERTIPADDRESS
 
